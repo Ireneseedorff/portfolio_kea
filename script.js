@@ -1,58 +1,22 @@
-var accordions = document.getElementsByClassName('accordion');
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-function getAccordionPanel(accordion) {
-    if (!(accordion instanceof HTMLElement)) {
-        return null;
-    }
-    if (!accordion.classList.contains('accordion')) {
-        return null;
-    }
-    var panel = accordion.nextElementSibling;
-    if (!panel) {
-        return null;
-    }
-    if (!panel.classList.contains('panel')) {
-        return null;
-    }
-    return panel;
-}
+for (i = 0; i < acc.length; i++) {
+    console.log("Åben - luk");
 
-function closeAccordions() {
-    for (var i = 0; i < accordions.length; ++i) {
-        var accordion = accordions[i];
-        accordion.classList.remove('active');
-        var panel = getAccordionPanel(accordion);
-        if (!panel) {
-            return;
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
         }
-        panel.classList.remove('open');
-    }
+    });
 }
-
-function initializeAccordions() {
-    closeAccordions();
-    for (var i = 0; i < accordions.length; ++i) {
-        var accordion = accordions[i];
-        accordion.addEventListener('click', function () {
-            var wasActive = this.classList.contains('active');
-            closeAccordions();
-            if (wasActive) {
-                return;
-            }
-            this.classList.add('active');
-            var panel = getAccordionPanel(this);
-            if (!panel) {
-                return;
-            }
-            panel.classList.add('open');
-        });
-    }
-}
-
-window.addEventListener('load', function (event) {
-    initializeAccordions();
-});
-
-
 
 // Kode til accordion fra https://www.w3schools.com/howto/howto_js_accordion.asp

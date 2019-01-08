@@ -57,6 +57,10 @@ a {
     flex-direction: row-reverse;
 }
 
+.panel {
+    overflow: visible;
+}
+
 
 /* HEADER */
 
@@ -543,26 +547,6 @@ footer img {
         margin: 1rem;
     }
 
-    .accordion {
-        cursor: pointer;
-        transition: 1s;
-        border: none;
-        text-align: left;
-    }
-
-    .panel {
-        display: none;
-    }
-
-    .panel.open {
-        display: block;
-    }
-
-
-
-}
-
-@media only screen and (max-width:500px) {
     .text_box {
         margin: 0;
         padding: 0 0 3rem 0;
@@ -580,7 +564,11 @@ footer img {
 
     .column_right img {
         width: 70%;
+
     }
+
+
+
 
     /***** DROP DOWN BUTTON ******/
 
@@ -606,6 +594,17 @@ footer img {
         margin-bottom: 0;
     }
 
+    #tema02 .column_left {
+        padding-top: 0;
+    }
+
+    .accordion {
+        cursor: pointer;
+        transition: 1s;
+        border: none;
+        text-align: left;
+    }
+
     .panel {
         padding: 0px;
         display: none;
@@ -614,14 +613,10 @@ footer img {
         margin-top: 1rem;
     }
 
-    #tema02 .column_left {
-        padding-top: 0;
-    }
-
     /*Åbne & Lukke-ikoner*/
     .accordion:after {
-        content: '\00FF0B';
         /* Unicode character for "plus" sign (+) */
+        content: '\00FF0B';
         font-size: 20px;
         color: red;
         float: right;
@@ -629,8 +624,8 @@ footer img {
     }
 
     .accordion.active:after {
-        content: '\2212';
         /* Unicode character for "minus" sign (-) */
+        content: '\2212';
         font-size: 20px;
         color: red;
         float: right;
