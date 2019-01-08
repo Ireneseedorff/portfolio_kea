@@ -1,0 +1,686 @@
+/**GENERELT***/
+
+
+body {
+    background-color: #f5f2f2;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-family: titling-gothic-fb-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border: none;
+}
+
+
+p {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding-top: 0.2rem;
+}
+
+a {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+}
+
+.column_left {
+    border-style: solid;
+    border-width: 2px;
+    margin: 2rem 4rem 2rem 4rem;
+    flex-basis: 400px;
+    padding: 1rem 1rem 1rem 1rem;
+    flex-grow: 1;
+}
+
+.column_right {
+    flex-grow: 1;
+    flex-basis: 400px;
+    flex-direction: row;
+    margin: 2rem 4rem 2rem 4rem;
+    align-self: center;
+}
+
+.opgave_a,
+.opgave_b {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opgave_a {
+    flex-direction: row-reverse;
+}
+
+
+/* HEADER */
+
+/*unvisited link */
+header href a:link {
+    color: #3866ff;
+}
+
+/* visited link */
+header a:visited {
+    color: #3866ff;
+}
+
+/* mouse over link */
+header a:hover {
+    color: #f78278;
+}
+
+/* selected link */
+header nav a:active {
+    color: #170f0f;
+}
+
+header h1 {
+    color: #3866ff;
+    margin: 1rem 0 0 0.5rem;
+}
+
+header h1.efternavn {
+    margin: 0 0 0 2.3rem;
+}
+
+header a.efternavn {
+    text-decoration: none;
+}
+
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 1rem 2.5rem 0 0;
+    position: fixed;
+    width: 100%;
+}
+
+.cv a {
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+    color: #3866ff;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    text-align: right;
+    margin-right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.overskrift a {
+    text-decoration: none;
+}
+
+/** FORSIDE **/
+#forside {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.splash img {
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 0rem;
+
+}
+
+.splash {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.portfolio {
+    cursor: pointer;
+    flex-basis: 100px;
+    transform: rotate(90deg);
+    align-self: center;
+}
+
+.portfolio a {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #3866ff;
+    text-decoration: none;
+}
+
+
+.portfolio a:hover {
+    color: #f78278;
+}
+
+.portfolio img {
+    width: 100%;
+    margin-left: -0.5rem;
+}
+
+
+
+/*** MOVE RIGHT ARROW****/
+
+.one:hover .move-right {
+    transform: translate(5px, 0);
+
+}
+
+.objekt {
+    transition: all 0.2s linear;
+}
+
+
+
+.one a img {
+    width: 1.7rem;
+    margin-right: 1rem;
+    margin-bottom: -0.1rem
+}
+
+/** Taget fra: https: //webdesign.tutsplus.com/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975 ***/
+
+/*** SCROLL DOWN ARROW ***/
+
+
+/******TEMA 1*******/
+#tema01 {
+    background-color: #f78278;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+#tema01 .column_left p {
+    color: #3866ff;
+}
+
+
+#tema01 .column_left {
+    border-color: #3866ff;
+}
+
+
+#tema01 .column_right img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#responsive_site_v2 {
+    border-color: #3866ff;
+}
+
+
+/* unvisited link */
+#tema01 a:link {
+    color: #3866ff;
+    cursor: pointer;
+}
+
+/* visited link */
+#tema01 a:visited {
+    color: #3866ff;
+}
+
+/* mouse over link */
+#tema01 a:hover {
+    color: #170f0f;
+}
+
+/* selected link */
+#tema01 nav a:active {
+    color: #170f0f;
+}
+
+
+/******TEMA 2*******/
+
+#tema02 .column_left p {
+    color: #f78278;
+}
+
+#tema02 .column_left {
+    border-color: #f78278;
+}
+
+#tema02 .column_right img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+/* unvisited link */
+#tema02 a:link {
+    color: #f78278;
+    cursor: pointer;
+}
+
+/* visited link */
+#tema02 a:visited {
+    color: #f78278;
+}
+
+/* mouse over link */
+#tema02 a:hover {
+    color: #3866ff;
+}
+
+video {
+    width: 90%;
+    margin: auto;
+    display: block;
+
+}
+
+/******TEMA 3*******/
+
+#tema03 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3866ff;
+}
+
+#tema03 .column_left p {
+    color: #170f0f;
+}
+
+#tema03 .column_left {
+    border-color: #170f0f;
+}
+
+#tema03 .column_right img {
+    width: 90%;
+    margin-top: 2rem;
+    display: block;
+    margin: auto;
+}
+
+/* unvisited link */
+#tema03 a:link {
+    color: #170f0f;
+    cursor: pointer;
+}
+
+/* visited link */
+#tema03 a:visited {
+    color: #170f0f;
+}
+
+/* mouse over link */
+#tema03 a:hover {
+    color: #f78278;
+}
+
+
+/******TEMA 4*******/
+
+#tema04 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tema04 .column_left p {
+    color: #3866ff;
+}
+
+#tema04 .column_left {
+    border-color: #3866ff;
+}
+
+#tema04 .column_right img {
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+/* unvisited link */
+#tema04 a:link {
+    color: #3866ff;
+    cursor: pointer;
+}
+
+/* visited link */
+#tema04 a:visited {
+    color: #3866ff;
+}
+
+/* mouse over link */
+#tema04 a:hover {
+    color: #f78278;
+}
+
+
+
+/******CV*******/
+
+
+#text {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 3rem 5rem 3rem;
+
+}
+
+.text_box {
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-direction: row;
+    padding: 0 1rem 1rem 1rem;
+    border-right: solid 2px #f78278;
+}
+
+.about {
+    flex-grow: 2;
+    flex-basis: 400px;
+    margin: 0 3rem 3rem 2rem;
+}
+
+.about h1 {
+    margin: 0;
+    color: #f78278;
+}
+
+.about img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+
+p {
+    color: #3866ff;
+}
+
+td {
+    color: #3866ff;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+th {
+    color: #170f0f;
+    font-family: titling-gothic-fb-condensed, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+
+td {
+    padding-top: 2rem;
+
+}
+
+.erhverv,
+.uddannelse {
+    margin-left: 10rem;
+}
+
+.forside_knap {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 90vw;
+    top: -4vw;
+    width: 5px;
+
+}
+
+.forside_knap a {
+    color: #f78278;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.forside_knap img {
+    width: 3rem;
+    transform: rotate(180deg);
+}
+
+
+
+/******FOOTER*******/
+
+footer {
+    color: #170f0f;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 3rem 1rem 1rem 1rem;
+    text-align: center;
+
+}
+
+footer img {
+    width: 2%;
+    cursor: pointer;
+    margin: 1rem 0.3rem 0 0.3rem;
+}
+
+
+
+
+/***** RESPONSIVE ******/
+
+
+@media only screen and (max-width:1200px) {
+
+    .splash img {
+        width: 80%
+    }
+
+}
+
+@media only screen and (max-width:910px) {
+    .text_box {
+        border-right: none;
+        border-bottom: solid 2px #f78278;
+    }
+
+    .about {
+        margin-top: 3rem;
+    }
+
+    .about img {
+        width: 60%;
+    }
+
+    .splash img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .splash img {
+        display: none;
+    }
+
+    .portfolio {
+        position: relative;
+        left: 40vw;
+        top: 70vw;
+    }
+
+    footer img {
+        width: 5%;
+    }
+
+    .forside_knap {
+        position: relative;
+        left: 77vw;
+        top: -13vw;
+        width: 5px;
+    }
+
+    #text {
+        margin: 1rem;
+    }
+
+    .accordion {
+        cursor: pointer;
+        transition: 1s;
+        border: none;
+        text-align: left;
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .panel.open {
+        display: block;
+    }
+
+
+
+}
+
+@media only screen and (max-width:500px) {
+    .text_box {
+        margin: 0;
+        padding: 0 0 3rem 0;
+    }
+
+    .about {
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    .column_left,
+    .column_right {
+        margin: 1rem;
+    }
+
+    .column_right img {
+        width: 70%;
+    }
+
+    /***** DROP DOWN BUTTON ******/
+
+
+    .column_left {
+        padding: 0 1rem 0 1rem;
+
+    }
+
+    #tema01 {
+        min-height: inherit;
+    }
+
+    #tema01 .column_right img {
+        margin-top: 4rem;
+    }
+
+    #tema01 .column_right {
+        margin-top: 0;
+    }
+
+    #tema01 .column_left {
+        margin-bottom: 0;
+    }
+
+    .panel {
+        padding: 0px;
+        display: none;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #tema02 .column_left {
+        padding-top: 0;
+    }
+
+    /*Åbne & Lukke-ikoner*/
+    .accordion:after {
+        content: '\00FF0B';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 20px;
+        color: red;
+        float: right;
+        margin-top: -0.4rem;
+    }
+
+    .accordion.active:after {
+        content: '\2212';
+        /* Unicode character for "minus" sign (-) */
+        font-size: 20px;
+        color: red;
+        float: right;
+        margin-top: -0.52rem;
+        margin-right: 0.2rem;
+
+    }
+
+    #tema01 .accordion:after {
+        color: #170f0f;
+    }
+
+    #tema01 .accordion.active:after {
+        color: #170f0f;
+    }
+
+    #tema02 .accordion:after {
+        color: #3866ff;
+    }
+
+    #tema02 .accordion.active:after {
+        color: #3866ff;
+    }
+
+    #tema03 .accordion:after {
+        color: #f78278;
+    }
+
+    #tema03 .accordion.active:after {
+        color: #f78278;
+    }
+
+    #tema04 .accordion:after {
+        color: #f78278;
+    }
+
+    #tema04 .accordion.active:after {
+        color: #f78278;
+    }
+
+    /* Kode til accordion fra https://www.w3schools.com/howto/howto_js_accordion.asp */
+
+    .cv {
+        position: absolute;
+    }
+
+}
+
+/*@media only screen and (min-width:500px) {
+    .panel {
+        display: none;
+    }
+}
